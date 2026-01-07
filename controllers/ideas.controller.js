@@ -44,7 +44,7 @@ exports.deleteIdea=(req,res)=>{
     const idea_id=req.params.id;
     if(ideas[idea_id]){
         delete ideas[idea_id];
-        res.status(200).send({message:"Id has been deleted"})
+        res.status(200).send({message:"Id has been delete"})
     }else{
         res.status(404).send({message:"Id is not present"})
     }
