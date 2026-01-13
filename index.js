@@ -3,8 +3,6 @@ const app=express();
 app.use(express.json())
 
 const ideaRoute=require('./routes/ideas.route.js')
-
-
 const port=3000;
 app.use("/ideas_app/v1",ideaRoute);
 
